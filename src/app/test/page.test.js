@@ -43,4 +43,11 @@ describe("Home", () => {
     expect(screen.getByAltText("Window icon")).toBeInTheDocument();
     expect(screen.getByAltText("Globe icon")).toBeInTheDocument();
   });
+
+  it("renders all input fields", () => {
+    render(<Home />);
+    const inputWWithRole = screen.getByRole("presentation");
+    expect(inputWWithRole).toHaveAttribute("type", "password");
+    expect(inputWWithRole).toHaveAttribute("role", "presentation");
+  });
 });

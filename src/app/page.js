@@ -99,6 +99,15 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+      <div>
+        <div>
+          <input type="email" placeholder="Subscribe to our newsletter" />
+        </div>
+        <div>
+          <input role="presentation" type="password" placeholder="Enter your password" />
+        </div>
+        <button type="submit">Subscribe</button>
+      </div>
     </div>
   );
 }
